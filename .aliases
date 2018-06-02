@@ -1,0 +1,57 @@
+# General
+alias t="tmux"
+alias h="cd ~"
+alias cls="clear"
+alias scs="sudo systemctl start"
+alias wo="cd ~/sites/common/job/kitabisa2/_frontend21"
+alias lrn="cd ~/sites/common/learning"
+
+# Edit Zsh config
+alias aliasedit="$EDITOR ~/.aliases"
+alias zshedit="$EDITOR ~/.zshrc"
+alias envedit="$EDITOR ~/.zshenv"
+alias omzedit="$EDITOR ~/.oh-my-zsh"
+
+# Reload Zsh config
+alias rezsh="source ~/.zshrc"
+
+# Copy & paste
+alias xc="xclip -selection clipboard"
+alias xp="xclip -selection clipboard -o"
+
+# Check current public IP address
+alias myip="curl -s https://api.ipify.org"
+
+# Ping Google
+alias png="ping google.com"
+
+# DNF
+alias sd="sudo dnf"
+alias sdi="sudo dnf install -y"
+alias sdu="sudo dnf upgrade --refresh -y"
+
+#NPM
+alias ni="npm install"
+alias nig="npm install -g"
+
+
+#YARN
+alias s="yarn start"
+alias yb="yarn build"
+alias yt="yarn test"
+alias ya="yarn add"
+alias yad="yarn add -D"
+alias yag="yarn add global"
+alias yr="yarn remove"
+alias yd="yarn deploy"
+
+# Open editor
+e() {
+  if [ -z $1 ]; then
+    $DESKTOP_EDITOR .
+  else
+    $DESKTOP_EDITOR $1
+  fi
+}
+
+alias et="f -e $DESKTOP_EDITOR -d"

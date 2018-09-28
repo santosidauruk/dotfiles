@@ -41,8 +41,9 @@ alias yb="yarn build"
 alias yt="yarn test"
 alias ya="yarn add"
 alias yad="yarn add -D"
-alias yag="yarn add global"
+alias yag="yarn global add"
 alias yr="yarn remove"
+alias ydv="yarn dev"
 alias yd="yarn deploy"
 
 # Open editor

@@ -3,8 +3,6 @@ alias t="tmux"
 alias h="cd ~"
 alias cls="clear"
 alias scs="sudo systemctl start"
-alias wo="cd ~/sites/common/job/kitabisa2/_frontend21"
-alias lrn="cd ~/sites/common/learning"
 
 # Edit Zsh config
 alias aliasedit="$EDITOR ~/.aliases"
@@ -33,7 +31,8 @@ alias sdu="sudo dnf upgrade --refresh -y"
 #NPM
 alias ni="npm install"
 alias nig="npm install -g"
-
+alias nd="npm run dev"
+alias nr="npm run"
 
 #YARN
 alias s="yarn start"
@@ -46,6 +45,12 @@ alias yr="yarn remove"
 alias ydv="yarn dev"
 alias yd="yarn deploy"
 
+#PNPM
+alias p="pnpm"
+alias pd="pnpm dev"
+alias pb="pnpm build"
+alias ps="pnpm start"
+
 # Open editor
 e() {
   if [ -z $1 ]; then
@@ -55,4 +60,26 @@ e() {
   fi
 }
 
+c() {
+  if [ -z $1 ]; then
+    cursor --classic .
+  else
+    cursor --classic $1
+  fi
+}
+
+zd() {
+  if [ -z $1 ]; then
+    zed .
+  else
+    zed $1
+  fi
+}
+
 alias et="f -e $DESKTOP_EDITOR -d"
+
+# Git
+alias glo='git pull origin "$(git_current_branch)"'
+alias gpo='git push origin "$(git_current_branch)"'
+alias glf='git pull fork` "$(git_current_branch)"'
+alias gpf='git push fork "$(git_current_branch)"'

@@ -87,5 +87,22 @@
       "hard_tabs": true,
       "tab_size": 4
     }
+  },
+  "auto_install_extensions": {
+    "dockerfile": true,
+    "emmet": true,
+    "git-firefly": true,
+    "github-dark-default": true,
+    "go-snippets": true,
+    "html": true,
+    "make": true,
+    "material-icon-theme": true,
+    "one-dark-darkened": true,
+    "one-dark-pro": true,
+    "polycarbonate-dark-theme": true,
+    "react-typescript-snippets": true,
+    "sql": true,
+    "vscode-dark-modern": true,
+    "xy-zed": true
   }
 }
